@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <body>
+    <div id="fb-root"></div>
+      <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="/"><img src="../public/logo_yappleya_60x60.png"></a>
+          <a class="brand" href="/">Yappleya</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a href="/about">About</a></li>
+              <li><a href="http://blog.yappleya.com">Blog</a></li>
+              <li><a id="fuckspammers" href="" target = "_blank">Contact</a></li>
+            </ul>
+            <ul class="nav">
+              <li><a href="#"></a></li>
+              <li><a href="/principal"><img src="../public/assets/img/spanish.jpg" title="Traducir al español" alt="spanish"></a></li>
+            </ul>
+            <div class="pull-right">
+              <!-- AddThis Button BEGIN -->
+              <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+                <a class="addthis_button_preferred_1"></a>
+                <a class="addthis_button_preferred_2"></a>
+                <a class="addthis_button_preferred_3"></a>
+                <a class="addthis_button_preferred_4"></a>
+                <a class="addthis_button_compact"></a>
+              </div>
+              <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-50c260c420adf67d"></script>
+              <!-- AddThis Button END -->
+            </div> <!-- pull-right -->
+          </div>
+        </div>  <!-- container -->
+      </div>  <!-- navbar-inner -->
+    </div> <!-- navbar-inverse navbar-fixed-top -->
+
+    <div id="maximage">
+      <img src="../public/bg/0.jpg" width="1920" height="1285" />
+      <img src="../public/bg/1.jpg" width="1920" height="1273" />
+      <img src="../public/bg/2.jpg" width="1920" height="1273" />
+      <img src="../public/bg/3.jpg" width="1920" height="1273" />
+      <img src="../public/bg/4.jpg" width="1920" height="1277" />
+    </div>
+    <div class="container">
+      <div class="hero-unit">
+        <div class="row-fluid">
+          <div class="span6 offset2>">
+            <p>
+              <center>
+                <img src="/public/titles/frontspirit_300x360.png" 
+                    class="clickImage"
+                    alt="The Apple Tree Spirit" width="300" height="360"
+                    onmouseover="javascript:this.src='/public/titles/frontspirit_300x360_light.png';"
+                    onmouseout="javascript:this.src='/public/titles/frontspirit_300x360.png';"
+                    onclick="javascript:location.href='/book01'" />
+              </center>
+            </p>
+          </div>  <!-- span6 offset 2 -->
+          <div class="span6 offset2>">
+            <p>
+              <center>
+                <img src="/public/titles/frontpixie_300x360.png" 
+                    class="clickImage"
+                    alt="The Christmas Pixie" width="300" height="360"
+                    onmouseover="javascript:this.src='/public/titles/frontpixie_300x360_light.png';"
+                    onmouseout="javascript:this.src='/public/titles/frontpixie_300x360.png';"
+                    onclick="javascript:location.href='/book02'" />
+              </center>
+            </p>
+          </div>  <!-- span6 offset 2 -->
+        </div>   <!-- row-fluid --> 
+      </div> <!-- hero-unit -->
+      <div class="row-fluid">
+        <div class="span10 offset1">
+          <blockquote>
+            <h4>"www.yappleya.com is here now. Do not forget to share the good new with the children, with your pupils, with your friends and colleagues. It is a real breakthrough, a revolutionary discovery and
+            the birth of a real new world. This is the entrance to the land of abundance, away from the false power of those who want us to continue administrating the misery of the scarce world we create day by day."</h4>
+            <small>Raquel Cachafeiro </small>
+          </blockquote>
+        </div>
+      </div>
+      
+
+{% endblock %}

@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+
+{% block content %}
+<body>
+    <div id="fb-root"></div>
+      <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="/"><img src="../public/logo_yappleya_60x60.png"></a>
+          <a class="brand" href="/">Yappleya</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a href="/about">About</a></li>
+              <li><a href="http://blog.yappleya.com">Blog</a></li>
+              <li><a id="fuckspammers" href="" target = "_blank">Contact</a></li>
+            </ul>
+            <ul class="nav">
+              <li><a href="#"></a></li>
+              <li><a href="/libro02"><img src="../public/assets/img/spanish.jpg" title="Translate to Spanish" alt="spanish"></a></li>
+            </ul>
+            <div class="pull-right">
+              <!-- AddThis Button BEGIN -->
+              <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+                <a class="addthis_button_preferred_1"></a>
+                <a class="addthis_button_preferred_2"></a>
+                <a class="addthis_button_preferred_3"></a>
+                <a class="addthis_button_preferred_4"></a>
+                <a class="addthis_button_compact"></a>
+              </div>
+              <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-50c260c420adf67d"></script>
+              <!-- AddThis Button END -->
+            </div> <!-- pull-right -->
+          </div>
+        </div>  <!-- container -->
+      </div>  <!-- navbar-inner -->
+    </div> <!-- navbar-inverse navbar-fixed-top -->
+
+    <div id="maximage">
+      <img src="../public/bg/0.jpg" width="1920" height="1285" />
+      <img src="../public/bg/1.jpg" width="1920" height="1273" />
+      <img src="../public/bg/2.jpg" width="1920" height="1273" />
+      <img src="../public/bg/3.jpg" width="1920" height="1273" />
+      <img src="../public/bg/4.jpg" width="1920" height="1277" />
+    </div>
+    <div class="container">
+      <div class="hero-unit">
+        <h1>
+          <img src="/public/titles/frontpixie_300x360.png" 
+                    alt="The Christmas Pixie" width="100" height="120"
+                    onmouseover="javascript:this.src='/public/titles/frontpixie_300x360_light.png';"
+                    onmouseout="javascript:this.src='/public/titles/frontpixie_300x360.png';" />
+                    The Christmas Pixie</h1>
+        <p><br>In this book parents and children shall find a new divine and magic meaning for Christmas. The Christmas pixie opens up for children and adults the real Christian spirit of this celebration that pixies also celebrate. </p>
+        <p>The divine and magic secret that has remain hidden for longer period is revealed now as the apple tree   spirit has manifest.</p>
+        <p>The beauty of truth overwhelms any fantasy. It is a story with soul and much joy.
+          Enjoy with your children, with your pupils, with friends the real images of pixies in search for their spirit.</p>
+        
+      </div>
+
+      <!-- Example row of columns -->
+      <div class="row">
+        <h1>Get the book</h1>
+        <div class="span4">
+          <p><a class="btn" href="#">Google Play: coming soon</a></p>
+        </div>
+        <div class="span4">
+          <p><a class="btn" href="http://www.amazon.com/dp/B00AZQUP5O" target="_blank">Amazon Kindle</a></p>
+       </div>
+        <div class="span4">
+          <p><a href="https://www.e-junkie.com/ecom/gb.php?i=1195131&c=single&cl=236394" target="ejejcsingle"><img src="http://www.e-junkie.com/ej/x-click-butcc.gif" border="0" alt="Buy Now"/></a></p>
+        </div>
+      </div>
+
+{% endblock %}

@@ -1,0 +1,94 @@
+{% extends "basees.html" %}
+
+{% block content %}
+  <body>
+    <div id="fb-root"></div>
+      <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="/"><img src="../public/logo_yappleya_60x60.png" alt="yappleya"></a>
+          <a class="brand" href="/">Yappleya</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a href="/sobre">Sobre</a></li>
+              <li><a href="http://blog.yappleya.com">Blog</a></li>
+              <li><a id="fuckspammers" href="" target = "_blank">Contacto</a></li>
+            </ul>
+            <ul class="nav">
+              <li><a href="#"></a></li>
+              <li><a href="/"><img src="../public/assets/img/english.jpg" alt="english" title="Translate to English"></a></li>
+            </ul>  
+            <div class="pull-right">
+              <!-- AddThis Button BEGIN -->
+              <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+                <a class="addthis_button_preferred_1"></a>
+                <a class="addthis_button_preferred_2"></a>
+                <a class="addthis_button_preferred_3"></a>
+                <a class="addthis_button_preferred_4"></a>
+                <a class="addthis_button_compact"></a>
+              </div>
+              <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-50c260c420adf67d"></script>
+              <!-- AddThis Button END -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="maximage">
+      <img src="../public/bg/0.jpg" width="1920" height="1285" />
+      <img src="../public/bg/1.jpg" width="1920" height="1273" />
+      <img src="../public/bg/2.jpg" width="1920" height="1273" />
+      <img src="../public/bg/3.jpg" width="1920" height="1273" />
+      <img src="../public/bg/4.jpg" width="1920" height="1277" />
+    </div>
+    <div class="container">
+      <div class="hero-unit">
+        <div class="row-fluid">
+          <div class="span6 offset2>">
+            <p>
+              <center>
+                <img src="/public/titles/portada_espiritu_manzano_300x360.png" 
+                    class="clickImage"
+                    alt="El Espíritu del Manzano" width="300" height="360"
+                    onmouseover="javascript:this.src='/public/titles/portada_espiritu_manzano_300x360_light.png';"
+                    onmouseout="javascript:this.src='/public/titles/portada_espiritu_manzano_300x360.png';"
+                    onclick="javascript:location.href='/libro01'" />
+              </center>
+            </p>
+          </div> <!-- span6 offset 2 -->
+          <div class="span6 offset2>">
+            <p>
+              <center>
+                <img src="/public/titles/portada_duende_navidad_300x360.png" 
+                    class="clickImage"
+                    alt="El Duende de la Navidad" width="300" height="360"
+                    onmouseover="javascript:this.src='/public/titles/portada_duende_navidad_300x360_light.png';"
+                    onmouseout="javascript:this.src='/public/titles/portada_duende_navidad_300x360.png';"
+                    onclick="javascript:location.href='/libro02'" />
+              </center>
+            </p>
+          </div>  <!-- span6 offset 2 -->
+        </div>   <!-- row-fluid -->  
+      </div>  <!-- hero-unit -->
+      <div class="row-fluid"> 
+        <div class="span10 offset1">
+          <blockquote>
+             <h4>"Ya llegó Yappleya. No te olvides de compartir la buena nueva con los niños, con tus alumnos, con tus amigos y colegas. Este es el descubrimiento y la creación de un mundo nuevo de verdad, esta es la entrada en la tierra de abundancia, lejos del poder de los que nos quieren mantener administrando la miseria de un mundo escaso que nos entrenan para crear cada día."</h4>
+            <small>Raquel Cachafeiro </small>
+          </blockquote>
+        </div>
+      </div>
+{% endblock %}

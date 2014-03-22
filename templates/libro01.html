@@ -1,0 +1,83 @@
+{% extends "basees.html" %}
+
+{% block content %}
+<body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="/principal"><img src="../public/logo_yappleya_60x60.png" alt="yappleya"></a>
+          <a class="brand" href="/principal">Yappleya</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="/sobre">Sobre</a></li>
+              <li><a href="http://blog.yappleya.com">Blog</a></li>
+              <li><a id="fuckspammers" href="" target = "_blank">Contacto</a></li>
+            </ul>
+            <ul class="nav">
+              <li><a href="#"></a></li>
+              <li><a href="/book01"><img src="../public/assets/img/english.jpg" title="Translate to english" alt="english"></a></li>
+            </ul>  
+            <div class="pull-right">
+              <!-- AddThis Button BEGIN -->
+              <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+                <a class="addthis_button_preferred_1"></a>
+                <a class="addthis_button_preferred_2"></a>
+                <a class="addthis_button_preferred_3"></a>
+                <a class="addthis_button_preferred_4"></a>
+                <a class="addthis_button_compact"></a>
+              </div>
+              <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-50c260c420adf67d"></script>
+              <!-- AddThis Button END -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="maximage">
+      <img src="../public/bg/0.jpg" width="1920" height="1285" />
+      <img src="../public/bg/1.jpg" width="1920" height="1273" />
+      <img src="../public/bg/2.jpg" width="1920" height="1273" />
+      <img src="../public/bg/3.jpg" width="1920" height="1273" />
+      <img src="../public/bg/4.jpg" width="1920" height="1277" />
+    </div>
+    <div class="container">
+      <div class="hero-unit">
+        <h1>
+          <img src="/public/titles/portada_espiritu_manzano_300x360.png" 
+                    alt="El Espíritu del Manzano" width="100" height="120"
+                    onmouseover="javascript:this.src='/public/titles/portada_espiritu_manzano_300x360_light.png';"
+                    onmouseout="javascript:this.src='/public/titles/portada_espiritu_manzano_300x360.png';" />
+                 ¡Redescubre El Espíritu del Manzano!</h1>
+        <p>Durante siglos El Espíritu del Manzano se  ha comunicado de diversas formas con el hombre y siempre su mensaje ha sido secuestrado e interpretado por la cultura dominante robándole el verdadero poder revolucionario que tiene.</p>
+        
+        <p>Pero ha llegado la hora en la que este mensaje se transmita  de forma íntegra con todo el poder del Espíritu del Manzano, sin interpretaciones tendenciosas. </p>
+
+        <p>Este es el mensaje de poder del Espíritu del Manzano y de su fruto, la manzana para aquel que tiene ojos para ver. Por primera vez se transmite como el Espíritu del Manzano ha querido.</p>
+
+        <p>Puedes participar en la revolución del poder de la verdad devolviendo al Espíritu del Manzano su verdadero papel en la historia de la evolución del hombre. Bienvenido a www.yappleya.com </p>
+        
+      </div>
+
+      <!-- Example row of columns -->
+      <div class="row">
+        <h1>Descargar el libro</h1>
+        <div class="span4">
+          <p><a class="btn" href="#">Google Play:pendiente (procesando)</a></p>
+        </div>
+        <div class="span4">
+          <p><a class="btn" href="http://www.amazon.es/El-Esp%C3%ADritu-del-Manzano-ebook/dp/B00AVZQMII" target="_blank">Comprar en Amazon Kindle</a></p>
+        </div>
+        <div class="span4">
+          <p><a class="btn" href="https://www.e-junkie.com/ecom/gb.php?i=1192193&c=single&cl=236394" target="ejejcsingle"><img src="http://www.e-junkie.com/ej/x-click-butcc.gif" border="0" alt="Buy Now"/>>Comprar PDF</a></p>
+        </div>
+        
+      </div>
+
+{% endblock %}

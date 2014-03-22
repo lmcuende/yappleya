@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+
+{% block content %}
+<body>
+    <div id="fb-root"></div>
+      <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="/"><img src="../public/logo_yappleya_60x60.png"></a>
+          <a class="brand" href="/">Yappleya</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a href="/about">About</a></li>
+              <li><a href="http://blog.yappleya.com">Blog</a></li>
+              <li><a id="fuckspammers" href="" target = "_blank">Contact</a></li>
+            </ul>
+            <ul class="nav">
+              <li><a href="#"></a></li>
+              <li><a href="/libro01"><img src="../public/assets/img/spanish.jpg" title="Traducir al español" alt="spanish"></a></li>
+            </ul>
+            <div class="pull-right">
+              <!-- AddThis Button BEGIN -->
+              <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+                <a class="addthis_button_preferred_1"></a>
+                <a class="addthis_button_preferred_2"></a>
+                <a class="addthis_button_preferred_3"></a>
+                <a class="addthis_button_preferred_4"></a>
+                <a class="addthis_button_compact"></a>
+              </div>
+              <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-50c260c420adf67d"></script>
+              <!-- AddThis Button END -->
+            </div> <!-- pull-right -->
+          </div>
+        </div>  <!-- container -->
+      </div>  <!-- navbar-inner -->
+    </div> <!-- navbar-inverse navbar-fixed-top -->
+
+    <div id="maximage">
+      <img src="../public/bg/0.jpg" width="1920" height="1285" />
+      <img src="../public/bg/1.jpg" width="1920" height="1273" />
+      <img src="../public/bg/2.jpg" width="1920" height="1273" />
+      <img src="../public/bg/3.jpg" width="1920" height="1273" />
+      <img src="../public/bg/4.jpg" width="1920" height="1277" />
+    </div>
+    <div class="container">
+      <div class="hero-unit">
+        <h1>
+          <img src="/public/titles/frontspirit_300x360.png" 
+                    alt="The Apple Tree Spirit" width="100" height="120"
+                    onmouseover="javascript:this.src='/public/titles/frontspirit_300x360_light.png';"
+                    onmouseout="javascript:this.src='/public/titles/frontspirit_300x360.png';" />
+          Let's rediscover the Apple Tree Spirit!</h1>
+        <p>For centuries The Apple Tree Spirit has tried to communicate in different ways with human beings and always his message has been kidnapped and interpreted by the dominant culture that stole the revolutionary power of the message.</p>
+        <p>But time has come for the message to be transmitted fully with all the power of the Apple Tree Spirit, without interpretations. 
+        This is the message of power of the Apple Tree Spirit and its fruit the apple for those who have eyes to see.</p>
+        <br>
+        <p>You can participate in this powerful revolution of the truth of the Apple Tree Spirit giving back his true importance in the history of evolution. If you are brave enough to participate in big changes welcome to Yappleya.</p>
+        
+      </div>
+
+      <!-- Example row of columns -->
+      <div class="row">
+        <h1>Get the book</h1>
+        <div class="span4">
+          <p><a class="btn" href="#">Google Play:coming soon</a></p>
+        </div>
+        <div class="span4">
+          <p><a class="btn" href="#">Amazon Kindle: coming soon</a></p>
+       </div>
+        <div class="span4">
+          <p><a class="btn" href="#">Buy it: coming soon</a></p>
+        </div>
+      </div>
+
+{% endblock %}

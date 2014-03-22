@@ -1,4 +1,4 @@
 yappleya
 ========
 
-App on GoogleAppengine to advertise about variuos digital books.
+App on GoogleAppengine to advertise about various digital books.
